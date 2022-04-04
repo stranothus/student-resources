@@ -1,6 +1,10 @@
 {
   "name": "student-resources",
   "version": "0.1.0",
+  "description": "Provide students a social platform through which they can connect and become friends with fellow students who share similar goals and aspirations. ",
+  "author": {
+    "name": "Quinn Gibson"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
