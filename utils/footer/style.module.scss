@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    height: auto;
+    padding: 25px 5vw;
+
+    > * {
+        margin: 0 25px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            margin: 0 25px;
+        }
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > * {
+            margin: 15px 0;
+            text-align: center;
+        }
+    }
+
+    input {
+        height: 20px;
+        margin: auto 25px;
+    }
+}
