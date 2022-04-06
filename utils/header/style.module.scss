@@ -1,7 +1,26 @@
+@import "../../public/variables.scss";
+
 .header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 25vw;
+
+    [id~=left] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        fill: $accent-2;
+    }
+
+    [id~=right] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        fill: $accent-2;
+    }
 }

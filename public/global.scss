@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+        height: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: $bg-2;
+}
