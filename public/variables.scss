@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap');
+
 $bg-1: #FFFFFF;
 $bg-2: #EFEFEF;
 $bg-3: #E0E0E0;
+$bg-contrast-1: #303030;
+$bg-contrast-2: #202020;
+$bg-contrast-3: #101010;
 $accent-1: #FFCA00;
 $accent-2: #FAC000;
 $accent-3: #F0BA00;
+$font-main: 'Lato', sans-serif;
+$font-accent: 'Poppins', sans-serif;
+$font-title: 'Quicksand', sans-serif;
+
+%paragraph {
+    line-height: 1.4;
+    font-family: $font-main;
+    font-size: 1.2rem;
+}

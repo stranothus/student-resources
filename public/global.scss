@@ -13,3 +13,13 @@ body {
     overflow-y: scroll;
     background-color: $bg-2;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: $bg-3;
+    box-shadow: 0 0 5px inset #00000030;
+}
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: $bg-1;
+}
