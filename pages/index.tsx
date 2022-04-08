@@ -12,7 +12,7 @@ export default class Home extends React.Component {
                 <NavigationTop></NavigationTop>
                 <Header image="https://st4.depositphotos.com/6064568/23023/v/600/depositphotos_230236108-stock-illustration-male-and-female-students-in.jpg">Student Resources</Header>
                 <AccentBlock>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Welcome to Student Resources! Student Resources is a global platform enabling students from all backgrounds to connect with each other for study, assistance, and friendships all in one place. You can access a pomodoro timer, set goals, track progress, and more if you're a solo player. No matter who you are, if you're a student, Student Resources has something to offer to you. </p>
                 </AccentBlock>
                 <Footer></Footer>
             </>
