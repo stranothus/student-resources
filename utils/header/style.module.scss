@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: calc(100vw - 10px);
     height: 25vw;
     background-repeat: no-repeat;
     background-size: cover;
