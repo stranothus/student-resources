@@ -2,7 +2,21 @@ import Link from "next/link";
 import React from "react";
 import style from "./style.module.scss";
 
+interface FooterState {
+    inputValue: string
+}
+
 export default class Footer extends React.Component {
+    emailRef:React.RefObject<HTMLInputElement> = React.createRef<HTMLInputElement>();
+    state: FooterState = {
+        inputValue: ""
+    };
+
+    constructor(props: {}) {
+        super(props);
+
+        this.checkValue = this.checkValue.bind(this);
+    }
     render(): JSX.Element {
         return (
             <footer className={"footer " + style.footer}>
@@ -14,8 +28,14 @@ export default class Footer extends React.Component {
                     <h2>Student Resources</h2>
                     <h3>Quinn Gibson</h3>
                 </div>
-                <input placeholder="Email"></input>
+                <div className={"input " + style.input}>
+                    <input onChange={this.checkValue} ref={this.emailRef} name="footer-email"></input>
+                    <label htmlFor="footer-email" className={this.state.inputValue ? "inputted" : "empty"}>Get email updates</label>
+                </div>
             </footer>
         );
+    }
+    checkValue(): void {
+        this.setState({ inputValue: this.emailRef.current?.value || "" });
     }
 }
