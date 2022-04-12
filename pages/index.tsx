@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import AccentBlock from "../utils/accent-block";
 import FlexCont from "../utils/flex-cont";
@@ -7,6 +6,7 @@ import Header from "../utils/header";
 import IconCard from "../utils/icon-card";
 import NavigationTop from "../utils/navigation/top";
 import BottomZig from "../utils/shapes/bottom/zig";
+import variables from "../public/variables.module.scss";
 
 export default class Home extends React.Component {
     render() {
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
                 <AccentBlock>
                     <p>Welcome to Student Resources! Student Resources is a global platform enabling students from all backgrounds to connect with each other for study, assistance, and friendships all in one place. You can access a pomodoro timer, set goals, track progress, and more if you're a solo player. No matter who you are, if you're a student, Student Resources has something to offer to you. </p>
                 </AccentBlock>
-                <BottomZig fill="#FAC000"></BottomZig>
+                <BottomZig fill={variables.accent2}></BottomZig>
                 <FlexCont>
                     <IconCard icon="info_outline" href="about">Learn more about Student Resources and all the many resources we provide. </IconCard>
                     <IconCard icon="people_outline" href="about">Student Resources wouldn't be anything without our wonderful team. Learn how to join us!</IconCard>

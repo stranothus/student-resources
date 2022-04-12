@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+:export {
+    bg1: $bg-1;
+    bg-2: $bg-2;
+    bg3: $bg-3;
+    bgcontrast1: $bg-contrast-1;
+    bgcontrast2: $bg-contrast-2;
+    bgcontrast3: $bg-contrast-3;
+    accent1: $accent-1;
+    accent2: $accent-2;
+    accent3: $accent-3;
+    fontmain: $font-main;
+    fontaccent: $font-accent;
+    fonttitle: $font-title;
+}
