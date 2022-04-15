@@ -8,6 +8,8 @@
     width: 90vw;
     height: auto;
     padding: 25px 5vw;
+    margin: 75px 0 0;
+    background-color: $accent-2;
 
     > * {
         margin: 0 25px;
@@ -55,21 +57,26 @@
             padding: 5px;
             font-family: $font-accent;
             font-size: 0.9rem;
+            background-color: #FFFFFF30;
+            border: 1px solid #000000;
+            border-radius: 3px;
         }
         label {
             position: absolute;
             left: 0;
             padding: 6px;
             font-family: $font-accent;
-            font-size: 0.9rem;
             color: $bg-contrast-1;
             pointer-events: none;
+            z-index: 1;
         }
         [class~=inputted] {
+            font-size: 0.7rem;
             top: -30px;
             transition: 0.2s all;
         }
         [class~=empty] {
+            font-size: 0.9rem;
             top: 0;
             transition: 0.2s all;
         }

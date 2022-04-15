@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../../public/variables.module.scss";
+import TopZag from "../shapes/top/zag";
 import style from "./style.module.scss";
 
 interface FooterState {
