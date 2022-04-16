@@ -28,7 +28,7 @@ export default class Footer extends React.Component {
                 </div>
                 <div className={"information " + style.information}>
                     <h2>Student Resources</h2>
-                    <h3>Quinn Gibson</h3>
+                    <h3>© Quinn Gibson</h3>
                 </div>
                 <div className={"input " + style.input}>
                     <input onChange={this.checkValue} ref={this.emailRef} name="footer-email"></input>
