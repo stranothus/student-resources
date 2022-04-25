@@ -49,8 +49,9 @@
     }
 
     .input {
+        display: flex;
+        flex-direction: row;
         position: relative;
-        height: 20px;
         margin: auto 25px;
 
         input {
@@ -69,6 +70,15 @@
             color: $bg-contrast-1;
             pointer-events: none;
             z-index: 1;
+        }
+        button {
+            margin: 0 10px;
+            padding: 5px;
+            font-family: $font-accent;
+            font-size: 0.9rem;
+            background-color: #FFFFFF30;
+            border: 1px solid #000000;
+            border-radius: 3px;
         }
         [class~=inputted] {
             font-size: 0.7rem;
