@@ -32,7 +32,7 @@ export default class Footer extends React.Component {
                     <h2>Student Resources</h2>
                     <h3>© Quinn Gibson</h3>
                 </div>
-                <form className={"input " + style.input} action="/api/email/signup" method="POST">
+                <form className={"input " + style.input} action="/api/email/signup" method="POST" onSubmit={this.submitEmail}>
                     <input onKeyDown={this.preventDefault} onChange={this.checkValue} ref={this.emailRef} name="email"></input>
                     <label htmlFor="email" className={this.state.inputValue ? "inputted" : "empty"}>Get email updates</label>
                     <button type="submit" style={{ visibility: this.state.inputValid ? "visible" : "hidden" }}>Sign up</button>
@@ -40,8 +40,30 @@ export default class Footer extends React.Component {
             </footer>
         );
     }
-    preventDefault(event: React.KeyboardEvent<HTMLInputElement>) {
+    preventDefault(event: React.KeyboardEvent<HTMLInputElement>): void {
         if(event.key === "Enter") event.preventDefault();
+    }
+    submitEmail(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+
+        const target: HTMLFormElement = event.target as HTMLFormElement;
+        type elementsType = HTMLFormControlsCollection & { email: HTMLInputElement };
+        const elements: elementsType = target.elements as elementsType;
+
+        console.log(elements.email.value);
+
+        fetch("/api/email/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email: elements.email.value
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err));
     }
     checkValue(event: ChangeEvent<HTMLInputElement>): void {
         event.preventDefault();
